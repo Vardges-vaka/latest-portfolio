@@ -1,0 +1,326 @@
+body {
+    background-color: #360130;
+    /* font-family: "Poppins"; */
+}
+
+header {
+    /* font-family: Poopins; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* font-family: "Poppins"; */
+    padding: 32px 142px;
+    
+  }
+
+  .active {
+    color: #FFD700;
+  }
+
+  header ul {
+    font-family: "Poppins";
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+      
+  }
+.non-active{
+    color: white;
+    text-decoration-line: none;
+
+  }
+
+
+
+
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+  }
+
+  .about img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 64px;
+
+  }
+
+  .about-title{
+    font-size: 64px;
+    align-self: stretch;
+    text-align: center;
+    font-weight: 600;
+    line-height: 84px;
+    color: #FFF;
+    
+
+
+
+  }
+
+  .about-text{
+    align-self: stretch;
+    text-align: center;
+    font-weight: 400;
+    line-height: 28px;
+    color: #FFF;
+    font-size: 18px;
+    padding: 0 32px;
+    width: 1157px;
+    margin: 0 auto;
+
+
+
+  }
+
+  .main-btn {
+    background-color: #A57C00;
+    color: black;
+    border: 1px solid #6C4C00;
+    width: 151px;
+    height: 52px;
+  }
+  .second-btn {
+    background-color: #071e2e;
+    color: #A57C00;
+    border: 1px solid #A57C00;
+    width: 151px;
+    height: 52px;
+    margin-left: 16px;
+  }
+
+
+  .btn {
+    border-radius: 20px;
+    font-size: 18px;
+    gap: 16px;
+    margin-top: 32px;
+
+  }
+
+  .line {
+    border: 0;
+    height: 1px;
+    background: #000000; 
+    margin-top: 96px; 
+    margin-bottom: 96px;
+    width: 1157px; 
+  }
+
+.container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 1157px;
+align-self: stretch;
+margin: 0 auto;
+gap: 156px;
+
+
+
+}
+
+.exp-title {
+color: #FFF;
+font-size: 48px;
+font-weight: 500;
+line-height: 64px;
+}
+
+
+
+.exp-position {
+display: flex;  
+justify-content: center;
+flex-direction: column;
+align-self: stretch;
+font-size: 24px;
+font-weight: 600;
+line-height: 52px; 
+color: #FFF;
+height: 37px;
+margin-bottom: 0;
+
+}
+
+.exp-subtitle {
+display: flex;
+flex-direction: row;
+gap: 8px ;
+margin-top: 0;
+}
+
+.exp-org-name {
+color: #FFF;
+font-size: 18px;
+line-height: 28px;
+font-weight: 400;
+}
+
+.exp-timeline {
+line-height: 28px;  
+font-weight: 400;
+font-size: 18px;
+color: #FFF;
+}
+
+.exp-description {
+color: #FFF;
+line-height: 28px;
+font-size: 18px;
+font-weight: 400;
+align-self: stretch;
+margin-top: 36px;
+}
+
+.my-skills-container {
+display: flex;
+flex-direction: row;
+
+
+
+}
+
+.my-skills-title {
+color: #FFF;
+font-size: 48px;
+width: 315px;
+font-weight: 500;
+line-height: 64px;
+
+
+}
+
+
+
+
+
+.skill-name {
+color: #FFF;
+font-size: 24px;
+display: flex;
+font-weight: 600;
+justify-content: center;
+align-self: stretch;
+line-height: 52px;
+height: 37px;
+flex-direction: column;
+
+
+}
+.skills {
+  width: 554px;
+height: 14px;
+background-color: #ffffff;
+padding: 0;
+
+
+
+}
+.line-HTML-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  border: 0;
+  height: 14px;
+  background: #39c605; 
+  margin-top: 0; 
+  width: 553.5px; 
+  height: 14px;
+  fill: 65%;
+
+
+
+}
+/* .a {
+  border: 0;
+  height: 14px;
+  background: #a7eb8f; 
+  margin-top: 0; 
+  width: 553.5px; 
+  height: 14px;
+  margin-left: 0;
+
+  
+
+}
+
+.b {
+  display: flex;
+  justify-content: flex-start;
+  border: 0;
+  height: 14px;
+  background: #39c605; 
+  margin-top: -22px; 
+  margin-left: 0;
+  width: 453.5px; 
+  height: 14px;
+  
+  
+
+}
+
+
+
+.c {
+margin-top: 0.5px;
+
+
+
+}
+
+
+
+.box {
+
+  background-color: #44ff00;
+  width: 453.5px;
+  height: 14px;
+  margin-top: -14px;
+
+  
+}
+
+.boxx {
+display: flex;
+  background-color: #a7eb8f;
+  width: 553.5px; 
+  height: 14px;
+  fill: #000000;
+  fill-rule: 65%;
+  
+} */
+
+
+
+
+
+
+.icons{
+    width: 35px;
+    height: 35px;
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-txt{
+  color: #A57C00 ;
+}
+
+.footer-icons {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 20px;
+}

@@ -1,0 +1,34 @@
+body {
+    background-color: #360130;
+    /* font-family: "Poppins"; */
+}
+
+header {
+    /* font-family: Poopins; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* font-family: "Poppins"; */
+    padding: 32px 142px;
+    
+  }
+
+  .active {
+    color: #FFD700;
+  }
+
+  header ul {
+    font-family: "Poppins";
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+      
+  }
+.non-active{
+    color: white;
+    text-decoration-line: none;
+
+  }

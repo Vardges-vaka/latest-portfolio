@@ -1,0 +1,172 @@
+body {
+    background-color: #360130;
+    /* font-family: "Poppins"; */
+}
+
+header {
+    /* font-family: Poopins; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* font-family: "Poppins"; */
+    padding: 32px 142px;
+    
+  }
+
+  .active {
+    color: #FFD700;
+  }
+
+  header ul {
+    font-family: "Poppins";
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+      
+  }
+.non-active{
+    color: white;
+    text-decoration-line: none;
+
+  }
+
+  .hero {
+    /* display: flex;
+    flex-direction: row; */
+    padding: 32px 142px;
+    /* width: 1156px;
+    height: 743px; */
+  }
+  
+  .hero-title {
+    font-size: 64px;
+    font-weight: 600;
+    color: white;
+    font-family: "Poppins";
+    width: 477px;
+    height: 168px;
+    line-height: 84px;
+  
+
+
+  }
+  .hero-role {
+    color: #A57C00;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 52px;
+  }
+  .hero-doc {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    /* font-family: "Poppins"; */
+    line-height: 28px;
+    margin-bottom: 64px;
+    width: 477px;
+  }
+  .main-btn {
+    background-color: #A57C00;
+    color: black;
+    border: 1px solid #6C4C00;
+    width: 151px;
+    height: 52px;
+    transition: 
+    width 5s, 
+    height 5s,
+    background-color 5s,
+  }
+  .second-btn {
+    background-color: #071e2e;
+    color: #A57C00;
+    border: 1px solid #A57C00;
+    width: 151px;
+    height: 52px;
+    margin-left: 16px;
+    transition: 
+    width 5s, 
+    height 5s,
+    background-color 5s,
+    border 5s,
+  }
+
+ .main-btn:hover{
+      height: 104px;
+      width: 302px;
+      font-size: 36px;
+      background-color: #4bff04;
+      border: 8px solid white;
+      font-weight: 900;
+      
+    }
+
+    .second-btn:hover{
+      height: 104px;
+      width: 302px;
+      font-size: 36px;
+      background-color: #4bff04;
+      color: #071e2e;
+      font-weight: 500;
+      border: 8px solid rgb(255, 0, 0);
+      font-weight: 900;
+    }
+  .btn {
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 12px;
+    gap: 16px;
+    margin-bottom: 109px;
+  
+  }
+
+
+    
+   
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+ .footer-txt{
+    color: #A57C00 ;
+  }
+
+  .footer-icons {
+display: flex;
+flex-direction: row;
+gap: 20px;
+
+
+
+
+    
+
+
+  }
+.icons{
+    width: 35px;
+    height: 35px;
+
+}
+
+ 
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 133px;
+
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .content {
+      flex-direction: column;
+    }}
