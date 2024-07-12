@@ -7,17 +7,26 @@
     <link rel="stylesheet" href="./About.css" type="text/css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="./my-logo (1).svg" alt="My Logo">
+<!--👇👇👇-header-👇👇👇-Start-👇👇👇-->
+<header>
+    <aside class="left-logo-mode">
+        <img src="./my-logo (1).svg" alt="My Logo">
+        <div class="mode-with-logo">
+            <div class="mode">
+                <input type="checkbox" id="lightMode">
+                <label for="lightMode"></label>
+            </div>
+            <p id="modeTitle"class="light-mode-text">Dark Mode</p>
         </div>
-        <ul class="nav-link">
-          <li><a href="./index.html" class="non-active">Home</a></li>
-          <li><a href="./About.html" class="active">About</a></li>
-          <li><a href="./Portfolio.html" class="non-active">Portfolio</a></li>
-          <li><a href="./Contacts.html" class="non-active">Contact</a></li>
-        </ul>
-    </header>
+</aside>
+<!--👇👇👇-Main Content-👇👇👇-Start-👇👇👇-->
+    <ul class="nav-link">
+      <li><a href="./index.html" class="non-active">Home</a></li>
+      <li><a href="./About.html" class="non-active">About</a></li>
+      <li><a href="./Portfolio.html" class="non-active">Portfolio</a></li>
+      <li><a href="./Contacts.html" class="active">Contact</a></li>
+    </ul>
+</header><!---☝☝☝-Header-☝☝☝-end-☝☝☝-- -->
 
     
 
@@ -60,6 +69,17 @@
     <section class="container">
       <div class="exp-container-left">
         <h2 class="exp-title">Experience</h2>
+      </div>
+      <div class="exp-container-middle">
+        <div class="circle"></div>
+        <div class="border"></div>
+        <div class="circle"></div>
+        <div class="border"></div>
+        <div class="circle-3"></div>
+        <div class="border-3"></div>
+        <div class="circle-4"></div>
+        <div class="border-4"></div>
+
       </div>
         <div class="exp-container-right">
             <Div class="exp">
@@ -134,51 +154,20 @@
         </div>
     </section>
 <hr class="line">
-<section class="my-skills">
-    <div class="container">
-        <div class="my-skills-left">
-            <h2 class="my-skills-title">My-Skills</h2>
-        </div>
-        <div class="my-skills-right">
-            <p class="skill-name">HTML 5</p>
-            <div class="skills">
-             <hr class="line-HTML-5">
-             <p class="skill-%">65%</p>
-            </div>
-            <!-- <div class="skills">
-                <p class="skill-name">CSS</p>
-                <hr class="line-CSS">
-                <p class="skill-%">57%</p>
-            </div>
-            <div class="skills">
-                <p class="skill-name">Drink Wizard</p>
-                <hr class="line-drink-wizard">
-                <p class="skill-%">95%</p>
-               </div>
-               <div class="skills">
-                <p class="skill-name">Idea Machine</p>
-                <hr class="line-idea-machine">
-                <p class="skill-%">80%</p>
-               </div>
-               <div class="skills">
-                <p class="skill-name">Problem Buster</p>
-                <hr class="line-problem-buster">
-                <p class="skill-%">85%</p>
-               </div> -->
 
-        </div>
-    </section>
-        <hr class="line">
+
     
 
+<!-- -👇👇👇-Footer-👇👇👇-Start-👇👇👇--->
 <div class="footer">
     <p class="footer-txt">Find me</p>
     <div class="footer-icons">
-        <DIv><img src="./instagram-icon.svg" alt="Instagram Logo" class="icons" /></DIv>
-        <DIv><img src="./linkedin-icon.svg" alt="LinkedIn Logo" class="icons" /></DIv>
-        <DIv><img src="./tiktok-icon.svg" alt="TikTok Logo" class="icons" /></DIv>
-        <DIv><img src="./whatsapp-icon.svg" alt="What'sapp Logo" class="icons" /></DIv>
+        <div><a href="https://www.instagram.com/the_cocktail_tree/ "><img src="./instagram-icon.svg" alt="Instagram Logo" class="icons" /></a> </DIv>
+        <div><a href="https://www.linkedin.com/company/the-cocktail-tree/?"><img src="./linkedin-icon.svg" alt="LinkedIn Logo" class="icons" /></a></div>
+        <div><a href="https://www.tiktok.com/@the_cocktail_tree?is_from_webapp=1&sender_device=pc"><img src="./tiktok-icon.svg" alt="TikTok Logo" class="icons" /></a></div>
+        <div><a href="https://wa.me/971585155667"><img src="./whatsapp-icon.svg" alt="What'sapp Logo" class="icons" /></a></div>
     </div>
-
+</div><!---☝☝☝-Footer-☝☝☝-end-☝☝☝-- -->
+<script src="./about.js"></script>
 </body>
 </html>

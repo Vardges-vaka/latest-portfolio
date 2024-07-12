@@ -1,0 +1,39 @@
+.hover-container {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .hover-list {
+    display: none; /* Initially hide the list */
+    position: absolute;
+    top: 100%; /* Position the list below the container */
+    left: 0;
+    /* background-color: white;
+    border: 1px solid #ccc; */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .hover-container:hover .hover-list {
+    display: flex;
+    justify-content: space-between;
+    background: none; /* Show the list when hovering over the container */
+  }
+  
+  .hover-list li {
+    padding: 8px;
+    /* border-bottom: 1px solid #ddd; */
+  }
+  
+  .hover-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .hover-list li:hover {
+    background-color: #f0f0f0;
+  }
+  

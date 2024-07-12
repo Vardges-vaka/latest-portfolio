@@ -1,37 +1,158 @@
-body {
-    background-color: #360130;
-    /* font-family: "Poppins"; */
+@font-face {
+  font-family: Rubik-Dirt;
+  src: url(./Fonts/Rubik-Dirt.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(/Fonts/Poppins-Regular.ttf);
+}
+ /* -👇👇👇_DARK_MODE_👇👇👇_Background_Color_Scheme_👇👇👇- */
+:root {
+/* -👇👇👇_LIGHT_MODE_👇👇👇_Color_Scheme_👇👇👇- */
+    --main-bg-color-light: #ef5a5a;
+    --inp-bg-color-light: #ffffff; 
+    --border-color-light: #cccccc; 
+    --inp-txt-color-light: #333333; 
+    --title-color-light: #333333;
+    --btn-hover-color-light: #e0e0e0; 
+    --main-txt-color-light: #333333;
+    --btn-color-light: #007BFF;
+    --btn-bg-color-light: #e0e0e0;
+
+   /* -👇👇👇_DEFAULT_MODE_👇👇👇_Color_Scheme_👇👇👇- */
+    --main-bg-color: var(--main-bg-color-light);   
+    --inp-bg-color: var(--inp-bg-color-light);
+    --border-color: var (--border-color-light);
+    --inp-txt-color: var(--inp-txt-color-light);
+    --title-color: var(--title-color-light);
+    --btn-hover-color:var(--btn-hover-color-light);
+    --main-txt-color: var(--main-txt-color-light);
+    --btn-color: var(--btn-color-light);
+    --btn-bg-color: var(--btn-bg-color-light);
+   /* -👇👇👇_DARK_MODE_👇👇👇_Color_Scheme_👇👇👇- */
+    --main-bg-color-dark: #360130;
+    --inp-bg-color-dark: #132531;
+    --border-color-dark: #7A297A;
+    --inp-txt-color-dark: #FFFFFF;
+    --title-color-dark: #FFD700;
+    --btn-hover-color-dark: #7A297A;
+    --main-txt-color-dark: white;
+    --btn-color-dark: #3f84b2;
+    --btn-bg-color-dark: #132531;
+    --font-family-title: 'Rubik-Dirt', sans-serif;
+    --font-family-body: 'Poppins', sans-serif;
 }
 
+/* body {
+  background-color: var(--main-bg-color);
+  margin: 0;
+} */
+ /* -👇👇👇-header-👇👇👇-Start-👇👇👇- */
+
+ 
+.left-logo-mode{/* -👇👇👇-Mode-👇👇👇-Start-👇👇👇- */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+ .light-mode-text{
+  color: var(--input-text-light);
+  align-self: center;
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--font-family-title);
+  color: var(--title-light);
+  width: 60px;
+  /* position: absolute;
+  left: 5px; */
+ }
+.mode-with-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  background-color: var(--btn-background-light);
+  gap: 5px;
+  padding-right: 10px;
+  padding-left: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 110px;
+  height: 48px;
+}
+.mode {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  padding: 2px;
+  margin-top: 2.5px;
+}
+.mode input[type="checkbox"] {
+  display: none;
+}
+.mode label{
+  background-image: url("./light-mode-icon60x60");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+.mode input[type="checkbox"]:checked + label {
+  background-color: var(--main-bg-color);
+  position: absolute;
+  bottom: 0px;
+  left: 75px;
+  right: 0px;
+  top: 2.5px;
+  background-image: url("./moon.gif");  /* need to be changed -----Canva--RunwayML*/
+}
+/* -☝☝☝-Mode-☝☝☝-end-☝☝☝- */
+/* ---👇👇👇-header-👇👇👇-Start-👇👇👇--- */
 header {
-    /* font-family: Poopins; */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* font-family: "Poppins"; */
     padding: 32px 142px;
-    
   }
-
   .active {
-    color: #FFD700;
+    color: var(--title-color);
+    border: 1px solid var(--title-color);
+    text-decoration: none;
+    font-family: var(--font-family-title);
+    padding: 5px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-image: url("./active-nav-bg-cool-mode.gif");
+    border-left: 0.35px;
+    border-right: 0.35px
   }
-
   header ul {
     font-family: "Poppins";
-    color: white;
+    color: var(--inp-txt-color);
     list-style: none;
     display: flex;
     gap: 10px;
     font-size: 18px;
-      
-  }
+    font-family: var(--font-family-body);
+}
 .non-active{
-    color: white;
+  color: var(--inp-txt-color);
     text-decoration-line: none;
 
-  }
+  }/* -☝☝☝-Header-☝☝☝-end-☝☝☝- */
+
+
 
   .hero {
     /* display: flex;
@@ -126,47 +247,52 @@ header {
     
    
 
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
- .footer-txt{
-    color: #A57C00 ;
-  }
-
-  .footer-icons {
+ /* -👇👇👇-Footer-👇👇👇-Start-👇👇👇- */
+ .icons{
+  width: 35px;
+  height: 35px;
+}
+.icons:hover {
+  width: 50px;
+  height: 50px;
+  background-color: var(--btn-color);
+  border-radius: 10px;
+  padding: 3px;
+  border: 2px solid var(--border-color);
+}
+.footer {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 64px; 
+}
+.footer-txt{
+color: var(--title-color);
+font-size: 25px;
+opacity: 0.75;
+font-family: var(--font-family-title);
+}
+.footer-txt:hover {
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: 900;
+  border: 3px dashed var(--title-color);
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: var(--btn-hover-color);
+}
+.footer-icons {
 display: flex;
 flex-direction: row;
+align-items: center;
 gap: 20px;
+}/* -☝☝☝-Footer-☝☝☝-end-☝☝☝- */
 
 
 
 
-    
-
-
-  }
-.icons{
-    width: 35px;
-    height: 35px;
-
-}
-
- 
-
-.content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 133px;
-
-
-}
-
-
-
-
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .content {
       flex-direction: column;
-    }}
+    }} */

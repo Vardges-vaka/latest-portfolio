@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css" type="text/css">
-
 </head>
 <body>
+<!--👇👇👇-header-👇👇👇-Start-👇👇👇-->
+<header>
+  <aside class="left-logo-mode">
+      <img src="./my-logo (1).svg" alt="My Logo">
+      <div class="mode-with-logo">
+          <div class="mode">
+              <input type="checkbox" id="lightMode">
+              <label for="lightMode"></label>
+          </div>
+          <p id="modeTitle"class="light-mode-text">Dark Mode</p>
+      </div>
+</aside>
+  <ul class="nav-link">
+    <li><a href="./index.html" class="non-active">Home</a></li>
+    <li><a href="./About.html" class="non-active">About</a></li>
+    <li><a href="./Portfolio.html" class="non-active">Portfolio</a></li>
+    <li><a href="./Contacts.html" class="active">Contact</a></li>
+  </ul>
+</header><!---☝☝☝-Header-☝☝☝-end-☝☝☝-- -->
 
-    <header>
-        <div>
-            <img src="./my-logo (1).svg" alt="My Logo">
-        </div>
-        <ul class="nav-link">
-          <li><a href="./index.html" class="active">Home</a></li>
-          <li><a href="./About.html" class="non-active">About</a></li>
-          <li><a href="./Portfolio.html" class="non-active">Portfolio</a></li>
-          <li><a href="./Contacts.html" class="non-active">Contact</a></li>
-        </ul>
-    </header>
 
 <section class="content">
   <div class="hero">
@@ -38,35 +45,24 @@
               <button class="btn second-btn">Lets Talk</button>
             </div>
           </div>
-            <div class="footer">
-            <p class="footer-txt">Find me</p>
-            <div class="footer-icons">
-                <DIv><img src="./instagram-icon.svg" alt="Instagram Logo" class="icons" /></DIv>
-                <DIv><img src="./linkedin-icon.svg" alt="LinkedIn Logo" class="icons" /></DIv>
-                <DIv><img src="./tiktok-icon.svg" alt="TikTok Logo" class="icons" /></DIv>
-                <DIv><img src="./whatsapp-icon.svg" alt="What'sapp Logo" class="icons" /></DIv>
-            </div>
-        </div>
+<!-- -👇👇👇-Footer-👇👇👇-Start-👇👇👇--->
+<div class="footer">
+  <p class="footer-txt">Find me</p>
+  <div class="footer-icons">
+      <div><a href="https://www.instagram.com/the_cocktail_tree/ "><img src="./instagram-icon.svg" alt="Instagram Logo" class="icons" /></a> </DIv>
+      <div><a href="https://www.linkedin.com/company/the-cocktail-tree/?"><img src="./linkedin-icon.svg" alt="LinkedIn Logo" class="icons" /></a></div>
+      <div><a href="https://www.tiktok.com/@the_cocktail_tree?is_from_webapp=1&sender_device=pc"><img src="./tiktok-icon.svg" alt="TikTok Logo" class="icons" /></a></div>
+      <div><a href="https://wa.me/971585155667"><img src="./whatsapp-icon.svg" alt="What'sapp Logo" class="icons" /></a></div>
+  </div>
+</div><!---☝☝☝-Footer-☝☝☝-end-☝☝☝-- -->
     </div> 
          
-    <div class="me"><img src="./Cartoonized Myself.png" alt="My Portrait" /></div>
+    <div class="me"><img id="ahmed" src="./Cartoonized Myself.png" alt="My Portrait" /></div>
 </section>
-
-   
-
-
-
   
-          <div>
-
-            
-          </div>
-   
-
-   
      
             
 
-      
+          <script src="./index.js"></script>  
 </body>
 </html>
