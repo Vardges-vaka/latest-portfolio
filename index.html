@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vardges's Portfolio</title>
     <link rel="stylesheet" href="./index.css" type="text/css">
 </head>
 <body>
 <!--👇👇👇-header-👇👇👇-Start-👇👇👇-->
 <header>
   <aside class="left-logo-mode">
-      <img src="./my-logo (1).svg" alt="My Logo">
+    <a href="./index.html"><img src="./icons/the-logo-light-mode.svg" alt="My Logo" id="logoIcon"></a>
+      
       <div class="mode-with-logo">
           <div class="mode">
               <input type="checkbox" id="lightMode">
               <label for="lightMode"></label>
           </div>
-          <p id="modeTitle"class="light-mode-text">Dark Mode</p>
+          <p id="modeTitle"class="light-mode-text">Cool Mode</p>
       </div>
 </aside>
   <ul class="nav-link">
-    <li><a href="./index.html" class="non-active">Home</a></li>
+    <li><a href="./index.html" class="active">Home</a></li>
     <li><a href="./About.html" class="non-active">About</a></li>
     <li><a href="./Portfolio.html" class="non-active">Portfolio</a></li>
-    <li><a href="./Contacts.html" class="active">Contact</a></li>
+    <li><a href="./Contacts.html" class="non-active">Contact</a></li>
   </ul>
-</header><!---☝☝☝-Header-☝☝☝-end-☝☝☝-- -->
-
-
+</header>
+<!---☝☝☝-Header-☝☝☝-end-☝☝☝-- -->
+<div class="main-content">
 <section class="content">
   <div class="hero">
         <div>
-            <p class="hero-title">Hi, I'm Vardges Petrosyan</p>
+            <p class="hero-title">Hey there,</p>
+            <p class="hero-title">I'm Vardges</p>
             <p class="hero-role">Full Stack Developer Extraordinaire</p>
             <p class="hero-doc">
                 Hi, I'm Vardges, your friendly neighborhood code wizard. 
@@ -40,29 +42,34 @@
                 front-ends to engineering robust back-ends, I do it all with a smile (and a few jokes). 
                 Let’s build something amazing together—because life’s too short for boring websites!
             </p>
-            <div class="btn-container">
-              <button class="btn main-btn">Hire me</button>
-              <button class="btn second-btn">Lets Talk</button>
+            <div class="btns-container">
+              <div class="btnContainer">
+                <button 
+                id="hireMeBtn" 
+                class="hire-me-btn">Hire me</button>
+            </div>
+              <div class="btnContainer">
+                <button 
+                id="letsTalkBtn" 
+                class="lets-talk-btn">Lets Talk</button>
+              </div>            
             </div>
           </div>
-<!-- -👇👇👇-Footer-👇👇👇-Start-👇👇👇--->
+    </div> 
+  <div class="me"><img id="crtAvatar" src="./images/cartoonize-avatar-light-mode.png" alt="My Portrait" /></div>
+</section>
+</div>
+<hr class="line">
+<!-- -👇👇👇-FOOTER-👇👇👇-START-👇👇👇--->
 <div class="footer">
   <p class="footer-txt">Find me</p>
   <div class="footer-icons">
-      <div><a href="https://www.instagram.com/the_cocktail_tree/ "><img src="./instagram-icon.svg" alt="Instagram Logo" class="icons" /></a> </DIv>
-      <div><a href="https://www.linkedin.com/company/the-cocktail-tree/?"><img src="./linkedin-icon.svg" alt="LinkedIn Logo" class="icons" /></a></div>
-      <div><a href="https://www.tiktok.com/@the_cocktail_tree?is_from_webapp=1&sender_device=pc"><img src="./tiktok-icon.svg" alt="TikTok Logo" class="icons" /></a></div>
-      <div><a href="https://wa.me/971585155667"><img src="./whatsapp-icon.svg" alt="What'sapp Logo" class="icons" /></a></div>
+      <div><a href="https://www.instagram.com/the_cocktail_tree/ "><img src="./icons/instagram-icon-light-mode.svg" alt="Instagram Logo" class="icons" id="instagramLogo"/></a> </DIv>
+      <div><a href="https://www.linkedin.com/company/the-cocktail-tree/?"><img src="./icons/linkedin-icon-light-mode.svg" alt="LinkedIn Logo" class="icons" id="linkedInLogo"/></a></div>
+      <div><a href="https://www.tiktok.com/@the_cocktail_tree?is_from_webapp=1&sender_device=pc"><img src="./icons/tiktok-icon-light-mode.svg" alt="TikTok Logo" class="icons" id="tikTokLogo"/></a></div>
+      <div><a href="https://wa.me/971585155667"><img src="./icons/whatsapp-icon-light-mode.svg" alt="Whatsapp Logo" class="icons" id="whatsappLogo"/></a></div>
   </div>
-</div><!---☝☝☝-Footer-☝☝☝-end-☝☝☝-- -->
-    </div> 
-         
-    <div class="me"><img id="ahmed" src="./Cartoonized Myself.png" alt="My Portrait" /></div>
-</section>
-  
-     
-            
-
-          <script src="./index.js"></script>  
+</div><!---☝☝☝-FOOTER-☝☝☝-END-☝☝☝-- -->
+<script src="./index.js"></script>  
 </body>
 </html>
