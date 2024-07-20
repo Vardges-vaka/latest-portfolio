@@ -1,75 +1,9 @@
-var mode = document.getElementById('lightMode');
-var modeLabel = document.getElementById("modeTitle");
-var modeContainer = document.querySelector('.mode');
-var avatar = document.getElementById("crtAvatar");
-var instIcon = document.getElementById("instagramLogo");
-var linkedInIcon = document.getElementById("linkedInLogo");
-var tikTokIcon = document.getElementById("tikTokLogo");
-var whatsappIcon = document.getElementById("whatsappLogo");
-var logoIcon = document.getElementById("logoIcon");
-mode.addEventListener('click', () => {
-            var rootStyles = getComputedStyle(document.documentElement);
-            if (rootStyles.getPropertyValue('--bodyColor').trim() === rootStyles.getPropertyValue('--bodyColor-light').trim()) {
-                document.documentElement.style.setProperty('--bodyColor', rootStyles.getPropertyValue('--bodyColor-dark').trim());
-                document.documentElement.style.setProperty('--titleColor', rootStyles.getPropertyValue('--titleColor-dark').trim());
-                document.documentElement.style.setProperty('--subtitleColor', rootStyles.getPropertyValue('--subtitleColor-dark').trim());
-                document.documentElement.style.setProperty('--textColor', rootStyles.getPropertyValue('--textColor-dark').trim());
-                document.documentElement.style.setProperty('--lineColor', rootStyles.getPropertyValue('--lineColor-dark').trim());
-                document.documentElement.style.setProperty('--borderColor', rootStyles.getPropertyValue('--border-color-dark').trim());
-                document.documentElement.style.setProperty('--buttonBackgroundColor', rootStyles.getPropertyValue('--buttonBackgroundColor-dark').trim());
-                document.documentElement.style.setProperty('--buttonBackgroundHover', rootStyles.getPropertyValue('--buttonBackgroundHover-dark').trim());
-                document.documentElement.style.setProperty('--buttonTextColor', rootStyles.getPropertyValue('--buttonTextColor-dark').trim());
-                document.documentElement.style.setProperty('--buttonTextHover', rootStyles.getPropertyValue('--buttonTextHover-dark').trim());
-                document.documentElement.style.setProperty('--footerIconsBackgroundHoverCover', rootStyles.getPropertyValue('--footerIconsBackgroundHoverCover-dark').trim());
-                document.documentElement.style.setProperty('--footerIconsBorderColor', rootStyles.getPropertyValue('--footerIconsBorderColor-dark').trim());
-                document.documentElement.style.setProperty('--footerTextBackgroundHoverColor', rootStyles.getPropertyValue('--footerTextbackgroundHoverColor-dark').trim());
-                document.documentElement.style.setProperty('--footerTextBorderHovercolor', rootStyles.getPropertyValue('--footerTextBorderHovercolor-dark').trim());
-                document.documentElement.style.setProperty('--footertitleColor', rootStyles.getPropertyValue('--footertitleColor-dark').trim());
-                document.documentElement.style.setProperty('--footertitleHoverColor', rootStyles.getPropertyValue('--footertitleHoverColor-dark').trim());
-                document.documentElement.style.setProperty('--headerNavLinkACTIVEBorderColor', rootStyles.getPropertyValue('--headerNavLinkACTIVEBorderColor-dark').trim());
-                document.documentElement.style.setProperty('--headerNavLinkACTIVEColor', rootStyles.getPropertyValue('--headerNavLinkACTIVEColor-dark').trim());
-                document.documentElement.style.setProperty('--headerNavLinkColor', rootStyles.getPropertyValue('--headerNavLinkColor-dark').trim());
-                document.documentElement.style.setProperty('--headerNavLinkNONACTIVEColor', rootStyles.getPropertyValue('--headerNavLinkNONACTIVEColor-dark').trim())
-                document.documentElement.style.setProperty('--navActiceTabBackground', rootStyles.getPropertyValue('--navActiceTabBackground-dark').trim())
-                document.documentElement.style.setProperty('--headerModeFlexDIrection', rootStyles.getPropertyValue('--headerModeFlexDIrection-dark').trim())
-                document.documentElement.style.setProperty('--textModeColor', rootStyles.getPropertyValue('--textModeColor-dark').trim())
-                document.documentElement.style.setProperty('--bodyBackgroundImage', rootStyles.getPropertyValue('--bodyBackgroundImage-dark').trim());
-                modeLabel.textContent = "Light Mode";
-                instIcon.src = "./icons/instagram-icon-cool-mode.svg";
-                linkedInIcon.src = "./icons/linkedin-icon-cool-mode.svg";
-                tikTokIcon.src = "./icons/tiktok-icon-cool-mode.svg";
-                whatsappIcon.src = "./icons/whatsapp-icon-cool-mode.svg";
-                logoIcon.src = "./icons/the-logo-cool-mode.svg";
-           } else {
-                document.documentElement.style.setProperty('--bodyColor', rootStyles.getPropertyValue('--bodyColor-light').trim());
-                document.documentElement.style.setProperty('--titleColor', rootStyles.getPropertyValue('--titleColor-light').trim());
-                document.documentElement.style.setProperty('--subtitleColor', rootStyles.getPropertyValue('--subtitleColor-light').trim());
-                document.documentElement.style.setProperty('--textColor', rootStyles.getPropertyValue('--textColor-light'));
-                document.documentElement.style.setProperty('--lineColor', rootStyles.getPropertyValue('--lineColor-light'));
-                document.documentElement.style.setProperty('--borderColor', rootStyles.getPropertyValue('--border-color-light'));
-                document.documentElement.style.setProperty('--buttonBackgroundColor', rootStyles.getPropertyValue('--buttonBackgroundColor-light').trim());
-                document.documentElement.style.setProperty('--buttonBackgroundHover', rootStyles.getPropertyValue('--buttonBackgroundHover-light').trim());
-                document.documentElement.style.setProperty('--buttonTextColor', rootStyles.getPropertyValue('--buttonTextColor-light').trim());
-                document.documentElement.style.setProperty('--buttonTextHover', rootStyles.getPropertyValue('--buttonTextHover-light').trim());
-                document.documentElement.style.setProperty('--footerIconsBackgroundHoverCover', rootStyles.getPropertyValue('--footerIconsBackgroundHoverCover-light').trim());
-                document.documentElement.style.setProperty('--footerIconsBorderColor', rootStyles.getPropertyValue('--footerIconsBorderColor-light').trim());
-                document.documentElement.style.setProperty('--footerTextBackgroundHoverColor', rootStyles.getPropertyValue('--footerTextbackgroundHoverColor-light').trim());
-                document.documentElement.style.setProperty('--footerTextBorderHovercolor', rootStyles.getPropertyValue('--footerTextBorderHovercolor-light').trim());
-                document.documentElement.style.setProperty('--footertitleColor', rootStyles.getPropertyValue('--footertitleColor-light').trim());
-                document.documentElement.style.setProperty('--footertitleHoverColor', rootStyles.getPropertyValue('--footertitleHoverColor-light').trim());
-                document.documentElement.style.setProperty('--headerNavLinkACTIVEBorderColor', rootStyles.getPropertyValue('--headerNavLinkACTIVEBorderColor-light').trim());
-                document.documentElement.style.setProperty('--headerNavLinkACTIVEColor', rootStyles.getPropertyValue('--headerNavLinkACTIVEColor-light').trim());
-                document.documentElement.style.setProperty('--headerNavLinkColor', rootStyles.getPropertyValue('--headerNavLinkColor-light').trim());
-                document.documentElement.style.setProperty('--headerNavLinkNONACTIVEColor', rootStyles.getPropertyValue('--headerNavLinkNONACTIVEColor-light').trim());
-                document.documentElement.style.setProperty('--navActiceTabBackground', rootStyles.getPropertyValue('--navActiceTabBackground-light').trim());
-                document.documentElement.style.setProperty('--headerModeFlexDIrection', rootStyles.getPropertyValue('--headerModeFlexDIrection-light').trim());
-                document.documentElement.style.setProperty('--textModeColor', rootStyles.getPropertyValue('--textModeColor-light').trim());
-                document.documentElement.style.setProperty('--bodyBackgroundImage', rootStyles.getPropertyValue('--bodyBackgroundImage-light').trim());
-                modeLabel.textContent = "Cool Mode";
-                instIcon.src = "./icons/instagram-icon-light-mode.svg";
-                linkedInIcon.src = "./icons/linkedin-icon-light-mode.svg";
-                tikTokIcon.src = "./icons/tiktok-icon-light-mode.svg";
-                whatsappIcon.src = "./icons/whatsapp-icon-light-mode.svg";
-                logoIcon.src = "./icons/the-logo-light-mode.svg";
-            }
-        })
+import {
+  setThemeFromStorage,
+  modeSwitchPortfolio,
+} from "./localStorage.js";
+
+document.addEventListener("DOMContentLoaded", setThemeFromStorage);
+
+let mode = document.getElementById("lightMode");
+mode.addEventListener("click", modeSwitchPortfolio);
