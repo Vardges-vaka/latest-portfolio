@@ -9,26 +9,26 @@
 :root {
   /* -👇👇👇_LIGHT_MODE_👇👇👇_Color_Scheme_👇👇👇- */
   --bodyColor-light: #f0f0f0;
-  --titleColor-light:#1f1f1f;
+  --titleColor-light: #1f1f1f;
   --subtitleColor-light: #4b4b4b;
   --textColor-light: #1f1f1f;
-  --lineColor-light: #007BFF;
-  --borderColor-light: #007BFF;
-  --buttonBackgroundColor-light:#007BFF;
-  --buttonBackgroundHover-light:  #f0f0f0;
+  --lineColor-light: #007bff;
+  --borderColor-light: #007bff;
+  --buttonBackgroundColor-light: #007bff;
+  --buttonBackgroundHover-light: #f0f0f0;
   --buttonTextColor-light: #f0f0f0;
   --buttonTextHover-light: #1f1f1f;
-  --footerIconsBackgroundHoverCover-light: #007BFF;
+  --footerIconsBackgroundHoverCover-light: #007bff;
   --footerIconsBorderColor-light: #1f1f1f;
-  --footerTextbackgroundHoverColor-light: #007BFF;
+  --footerTextbackgroundHoverColor-light: #007bff;
   --footerTextBorderHovercolor-light: #1f1f1f;
   --footertitleColor-light: #1f1f1f;
   --footertitleHoverColor-light: #fffcfc;
-  --headerNavLinkACTIVEBorderColor-light: #007BFF;
+  --headerNavLinkACTIVEBorderColor-light: #007bff;
   --headerNavLinkACTIVEColor-light: #1f1f1f;
   --headerNavLinkNONACTIVEColor-light: #1f1f1f;
   --textModeColor-light: #1f1f1f;
-     /* -👇👇👇_DEFAULT_MODE_👇👇👇_Color_Scheme_👇👇👇- */
+  /* -👇👇👇_DEFAULT_MODE_👇👇👇_Color_Scheme_👇👇👇- */
   --bodyColor: var(--bodyColor-light);
   --titleColor: var(--titleColor-light);
   --subtitleColor: var(--subtitleColor-light);
@@ -36,39 +36,40 @@
   --lineColor: var(--lineColor-light);
   --borderColor: var(--border-color-light);
   --buttonBackgroundColor: var(--buttonBackgroundColor-light);
-  --buttonBackgroundHover: var( --buttonBackgroundHover-light);
+  --buttonBackgroundHover: var(--buttonBackgroundHover-light);
   --buttonTextColor: var(--buttonTextColor-light);
   --buttonTextHover: var(--buttonTextHover-light);
-  --footerIconsBackgroundHoverCover: var(--footerIconsBackgroundHoverCover-light);
+  --footerIconsBackgroundHoverCover: var(
+    --footerIconsBackgroundHoverCover-light
+  );
   --footerIconsBorderColor: var(--footerIconsBorderColor-light);
   --footerTextBackgroundHoverColor: var(--footerTextbackgroundHoverColor-light);
   --footerTextBorderHovercolor: var(--footerTextBorderHovercolor-light);
-  --footertitleColor: var( --footertitleColor-light);
+  --footertitleColor: var(--footertitleColor-light);
   --footertitleHoverColor: var(--footertitleHoverColor-light);
   --headerNavLinkACTIVEBorderColor: var(--headerNavLinkACTIVEBorderColor-light);
   --headerNavLinkACTIVEColor: var(--headerNavLinkACTIVEColor-light);
-  --headerNavLinkColor: var(--headerNavLinkColor-light);
   --headerNavLinkNONACTIVEColor: var(--headerNavLinkNONACTIVEColor-light);
   --textModeColor: var(--textModeColor-light);
-  
+
   /* -👇👇👇_COOL_MODE_👇👇👇_Background_Color_Scheme_👇👇👇- */
   --bodyColor-dark: #360130;
-  --titleColor-dark:#ffaa00;
+  --titleColor-dark: #ffaa00;
   --subtitleColor-dark: #0c71b4;
   --textColor-dark: #f0f0f0;
   --lineColor-dark: #a800a8;
   --borderColor-dark: #ff00ff;
-  --buttonBackgroundColor-dark:#132531;
-  --buttonBackgroundHover-dark:  #7A297A;;
+  --buttonBackgroundColor-dark: #132531;
+  --buttonBackgroundHover-dark: #7a297a;
   --buttonTextColor-dark: #f0f0f0;
   --buttonTextHover-dark: #1f1f1f;
   --footerIconsBackgroundHoverCover-dark: none;
   --footerIconsBorderColor-dark: none;
   --footerTextbackgroundHoverColor-dark: #ffd500;
-  --footerTextBorderHovercolor-dark: #007BFF;
+  --footerTextBorderHovercolor-dark: #007bff;
   --footertitleColor-dark: #fffcfc;
   --footertitleHoverColor-dark: #1f1f1f;
-  --headerNavLinkACTIVEBorderColor-dark: #007BFF;
+  --headerNavLinkACTIVEBorderColor-dark: #007bff;
   --headerNavLinkACTIVEColor-dark: #ff9500;
   --headerNavLinkNONACTIVEColor-dark: #f0f0f0;
   --textModeColor-dark: #ffd500;
@@ -77,9 +78,9 @@
   --bodyBackgroundImage: var(--bodyBackgroundImage-light);
   --bodyBackgroundImage-dark: url("./images/Backgrounds/body-5.gif");
 
-  --font-family-title: 'Rubik-Dirt', sans-serif;
-  --font-family-body: 'Poppins', sans-serif;
-  
+  --font-family-title: "Rubik-Dirt", sans-serif;
+  --font-family-body: "Poppins", sans-serif;
+
   --navActiceTabBackground: var(--navActiceTabBackground-light);
   --navActiceTabBackground-light: none;
   --navActiceTabBackground-dark: url("./icons/active-nav-bg-cool-mode.gif");
@@ -91,26 +92,26 @@
   --contentBackgroundImage-light: none;
   --contentBackgroundImage: var(--contentBackgroundImage-light);
   --contentBackgroundImage-dark: url("./images/Backgrounds/body-22.gif");
-  
+
   --contentBorder-light: none;
   --contentBorder: var(--contentBorder-light);
   --contentBorder-dark: 2px dashed #fd6f03;
-
 }
 body {
-      background-image: var(--bodyBackgroundImage);
+  background-image: var(--bodyBackgroundImage);
 
   background-color: var(--bodyColor);
-margin: 0;
+  margin: 0;
 }
 /* -👇👇👇-header-👇👇👇-Start-👇👇👇- */
-.left-logo-mode{/* -👇👇👇-Mode-👇👇👇-Start-👇👇👇- */
+.left-logo-mode {
+  /* -👇👇👇-Mode-👇👇👇-Start-👇👇👇- */
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
 }
- .light-mode-text{
+.light-mode-text {
   color: var(--textModeColor) !important;
   align-self: center;
   text-align: center;
@@ -118,8 +119,8 @@ margin: 0;
   font-family: var(--font-family-title);
   color: var(--title-light);
   width: 60px;
- }
-.mode-with-logo{
+}
+.mode-with-logo {
   display: flex;
   flex-direction: var(--headerModeFlexDIrection);
   justify-content: space-between;
@@ -147,8 +148,20 @@ margin: 0;
 .mode input[type="checkbox"] {
   display: none;
 }
-.mode label{
-  background-image: url("./icons/cool-mode-icon.gif");
+.mode label {
+  /**
+   * Sets the background image of the mode toggle element to the "cool mode" icon.
+   * This is a temporary fix for the icon, as indicated by the "FIXME:" comment.
+   */
+  /**
+   * Sets the background image of the mode toggle element to the "cool mode" icon.
+   * This is a temporary fix for the icon, as indicated by the "FIXME:" comment.
+   */
+  /**
+   * Sets the background image of the mode toggle element to the "cool mode" icon.
+   * This is a temporary fix for the icon, as indicated by the "FIXME:" comment.
+   */
+  background-image: url("./icons/cool-mode-icon.gif");/* FIXME: */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -158,6 +171,7 @@ margin: 0;
   cursor: pointer;
   display: inline-block;
 }
+
 .mode input[type="checkbox"]:checked + label {
   /* background-color: var();-----------------☝☝☝-Mode-👇👇👇--- */
   position: absolute;
@@ -165,42 +179,41 @@ margin: 0;
   left: 5px;
   right: 0px;
   top: 2.5px;
-  background-image: url("./icons/light-mode-icon");  /* need to be changed -----Canva--RunwayML*/
+  background-image: url("./icons/light-mode-icon"); /* FIXME: */
 }
 /* -☝☝☝-Mode-☝☝☝-end-☝☝☝- */
 /* ---👇👇👇-header-👇👇👇-Start-👇👇👇--- */
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px 142px;
-  }
-  .active {
-    color: var(--headerNavLinkACTIVEColor);
-    border: 1px solid var(--headerNavLinkACTIVEBorderColor);
-    text-decoration: none;
-    font-family: var(--font-family-title);
-    padding: 5px 10px;
-    border-radius: 10px 10px 10px 10px;
-    background-image: var(--navActiceTabBackground);
-    /* background-image: url("./active-nav-bg-cool-mode.gif"); */
-    border-left: 0.35px;
-    border-right: 0.35px
-  }
-  header ul {
-    font-family: "Poppins";
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    font-size: 18px;
-    font-family: var(--font-family-body);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 142px;
 }
-.non-active{
+.active {
+  color: var(--headerNavLinkACTIVEColor);
+  border: 1px solid var(--headerNavLinkACTIVEBorderColor);
+  text-decoration: none;
+  font-family: var(--font-family-title);
+  padding: 5px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background-image: var(--navActiceTabBackground);
+  /* background-image: url("./active-nav-bg-cool-mode.gif"); */
+  border-left: 0.35px;
+  border-right: 0.35px;
+}
+header ul {
+  font-family: "Poppins";
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  font-family: var(--font-family-body);
+}
+.non-active {
   color: var(--headerNavLinkNONACTIVEColor);
-    text-decoration-line: none;
-
-  }/* -☝☝☝-Header-☝☝☝-end-☝☝☝- */
+  text-decoration-line: none;
+} /* -☝☝☝-Header-☝☝☝-end-☝☝☝- */
 .main-content {
   display: flex;
   justify-content: center;
@@ -211,63 +224,63 @@ header {
   /* background-color: blue; */
 }
 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    width: 1157px; 
-    height: fit-content;
-    background-image: var(--contentBackgroundImage);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 10px 10px 0px 10px;
-    border: var(--contentBorder);
-    border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 1157px;
+  height: fit-content;
+  background-image: var(--contentBackgroundImage);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px 10px 0px 10px;
+  border: var(--contentBorder);
+  border-radius: 5px;
 }
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-start;
-    align-items: stretch;
-    width: 450px;
-    margin-top: 0px;
-    /* margin: 10px 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-items: stretch;
+  width: 450px;
+  margin-top: 0px;
+  /* margin: 10px 20px; */
 }
 .hero-title {
-    font-size: 64px;
-    line-height: 84px;
-    color: var(--titleColor);
-    font-family: var(--font-family-title);
-    align-self: stretch;
-    margin: 0;
-    width: fit-content;
+  font-size: 64px;
+  line-height: 84px;
+  color: var(--titleColor);
+  font-family: var(--font-family-title);
+  align-self: stretch;
+  margin: 0;
+  width: fit-content;
 }
 .hero-role {
-    color: var(--subtitleColor);
-    font-family: var(--font-family-title);
-    font-size: 24px;
-    margin: 10px 0px;
+  color: var(--subtitleColor);
+  font-family: var(--font-family-title);
+  font-size: 24px;
+  margin: 10px 0px;
 }
 .hero-doc {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--textColor);
-    font-family: var(--font-family-body);
-    line-height: 28px;
-    margin: 0;
-    width: fit-content;
-    padding: 2.5px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--textColor);
+  font-family: var(--font-family-body);
+  line-height: 28px;
+  margin: 0;
+  width: fit-content;
+  padding: 2.5px;
 }
-.me{
+.me {
   margin-bottom: -5px;
 }
 /* -👇👇👇-Footer-👇👇👇-Start-👇👇👇- */
- .icons{
+.icons {
   width: 35px;
   height: 35px;
   transition: 1s;
-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .icons:hover {
   width: 50px;
@@ -278,19 +291,19 @@ transition-timing-function: ease-in-out;
   border: 2px solid var(--footerIconsBorderColor);
 }
 .footer {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin: 32px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px;
 }
-.footer-txt{
-color: var(--footertitleColor);
-font-size: 25px;
-opacity: 0.75;
-font-family: var(--font-family-title);
-transition: 1s;
-transition-timing-function: ease-in-out;
+.footer-txt {
+  color: var(--footertitleColor);
+  font-size: 25px;
+  opacity: 0.75;
+  font-family: var(--font-family-title);
+  transition: 1s;
+  transition-timing-function: ease-in-out;
 }
 .footer-txt:hover {
   cursor: pointer;
@@ -299,86 +312,86 @@ transition-timing-function: ease-in-out;
   border-radius: 10px;
   padding: 5px 10px;
   background-color: var(--footerTextBackgroundHoverColor);
-  color: var(--footertitleHoverColor-light)
+  color: var(--footertitleHoverColor-light);
 }
 .footer-icons {
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 20px;
-}/* -☝☝☝-Footer-☝☝☝-end-☝☝☝- */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+} /* -☝☝☝-Footer-☝☝☝-end-☝☝☝- */
 .line {
   border: 0;
   height: 1px;
-  background: var(--lineColor); 
-  margin-top: 64px; 
+  background: var(--lineColor);
+  margin-top: 64px;
   margin-bottom: 32px;
-  width: 1157px; 
+  width: 1157px;
 }
 /* ---👇👇👇-Button-👇👇👇-Start-👇👇👇--- */
- .btns-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 10px;
-    width: 100%;
-    margin-top: 0px;
-    margin-left: -1px;
-    margin-bottom: 10px;
-    }
- .btnContainer {
-    background-color: var(--buttonBackgroundColor);
-    border-radius: 10px;
-    height: fit-content;
-    padding: 3px;
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-  }
- .btnContainer:hover {
-    background-color: var(--buttonBackgroundHover);
-    transition: 10s;
-    transition-timing-function: ease-in-out;
-  }
-  .hire-me-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: var(--buttonTextColor);
-    background-color: var(--buttonBackgroundColor);
-    border: 1px solid var(--borderColor);
-    border-radius: 5px;
-    text-align: center;
-    font-weight: 400;
-    cursor: pointer;
-    font-family: var(--font-family-body);
-    width: 100%;
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-  }
-  .hire-me-btn:hover {
-    background-color: var(--buttonBackgroundHover);
-    color: var(--buttonTextHover);
-    font-weight: 700;
-  }
-  .lets-talk-btn:hover {
-    background-color: var(--buttonBackgroundHover);
-    color: var(--buttonTextHover);
-  }
+.btns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+  width: 100%;
+  margin-top: 0px;
+  margin-left: -1px;
+  margin-bottom: 10px;
+}
+.btnContainer {
+  background-color: var(--buttonBackgroundColor);
+  border-radius: 10px;
+  height: fit-content;
+  padding: 3px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.btnContainer:hover {
+  background-color: var(--buttonBackgroundHover);
+  transition: 10s;
+  transition-timing-function: ease-in-out;
+}
+.hire-me-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--buttonTextColor);
+  background-color: var(--buttonBackgroundColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: var(--font-family-body);
+  width: 100%;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.hire-me-btn:hover {
+  background-color: var(--buttonBackgroundHover);
+  color: var(--buttonTextHover);
+  font-weight: 700;
+}
+.lets-talk-btn:hover {
+  background-color: var(--buttonBackgroundHover);
+  color: var(--buttonTextHover);
+}
 .lets-talk-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: var(--buttonTextColor);
-    background-color: var(--buttonBackgroundColor);
-    border: 1px solid var(--borderColor);
-    border-radius: 5px;
-    text-align: center;
-    font-weight: 400;
-    cursor: pointer;
-    font-family: var(--font-family-body);
-    width: 100%;
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-  }
-  /* -☝☝☝-Button-☝☝☝-end-☝☝☝- */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--buttonTextColor);
+  background-color: var(--buttonBackgroundColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: var(--font-family-body);
+  width: 100%;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+/* -☝☝☝-Button-☝☝☝-end-☝☝☝- */
 /* @media only screen and (max-width: 600px) {
     .content {
       flex-direction: column;

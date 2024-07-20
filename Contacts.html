@@ -1,75 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacting Vardges</title>
-    <link rel="stylesheet" href="./Contacts.css" type="text/css">
-</head>
-<body>
-<!--👇👇👇-header-👇👇👇-Start-👇👇👇-->
-<header>
-    <aside class="left-logo-mode">
-      <a href="./index.html"><img src="./icons/the-logo-light-mode.svg" alt="My Logo" id="logoIcon"></a>
-        
+    <link rel="stylesheet" href="./Contacts.css" type="text/css" />
+  </head>
+  <body data-mode="light">
+    <!--👇👇👇-header-👇👇👇-Start-👇👇👇-->
+    <header>
+      <aside class="left-logo-mode">
+        <a href="./index.html"
+          ><img
+            src="./icons/the-logo-light-mode.svg"
+            alt="My Logo"
+            id="logoIcon"
+        /></a>
+
         <div class="mode-with-logo">
-            <div class="mode">
-                <input type="checkbox" id="lightMode">
-                <label for="lightMode"></label>
-            </div>
-            <p id="modeTitle"class="light-mode-text">Cool Mode</p>
+          <div class="mode">
+            <input type="checkbox" id="lightMode" />
+            <label for="lightMode"></label>
+          </div>
+          <p id="modeTitle" class="light-mode-text">Cool Mode</p>
         </div>
-  </aside>
-    <ul class="nav-link">
-      <li><a href="./index.html" class="non-active">Home</a></li>
-      <li><a href="./About.html" class="non-active">About</a></li>
-      <li><a href="./Portfolio.html" class="non-active">Portfolio</a></li>
-      <li><a href="./Contacts.html" class="active">Contact</a></li>
-    </ul>
-  </header>
-  <!---☝☝☝-Header-☝☝☝-end-☝☝☝-- -->
-<!--👇👇👇-Main Content-👇👇👇-Start-👇👇👇-->
+      </aside>
+      <ul class="nav-link">
+        <li><a href="./index.html" class="non-active">Home</a></li>
+        <li><a href="./About.html" class="non-active">About</a></li>
+        <li><a href="./Portfolio.html" class="non-active">Portfolio</a></li>
+        <li><a href="./Contacts.html" class="active">Contact</a></li>
+      </ul>
+    </header>
+    <!---☝☝☝-Header-☝☝☝-end-☝☝☝-- -->
+    <!--👇👇👇-Main Content-👇👇👇-Start-👇👇👇-->
     <section class="main-content">
-        <div class="main-content-text-box">
-            <p class="text-box-title">Have A Project?<span>Contact</span>Me ✋</p>
-            <p class="text-box-text">Send me an email and i will get back to you.<span>IF I CAN!😅</span></p>
+      <div class="main-content-text-box">
+        <p class="text-box-title">Have A Project?<span>Contact</span>Me ✋</p>
+        <p class="text-box-text">
+          Send me an email and i will get back to you.<span>IF I CAN!😅</span>
+        </p>
+      </div>
+      <!--👇👇👇-Form-👇👇👇-Start-👇👇👇-->
+      <div class="form-container">
+        <div class="short-form">
+          <p class="form-label">Your Name</p>
+          <div class="short-input-container">
+            <input type="text" placeholder="Type Your Name" />
+          </div>
         </div>
-<!--👇👇👇-Form-👇👇👇-Start-👇👇👇-->
-        <div class="form-container">
-            <div class="short-form">
-                <p class="form-label">Your Name</p>
-                <div class="short-input-container">
-                    <input type="text" placeholder="Type Your Name">
-                </div>
-            </div>
-            <div class="short-form">
-                <p class="form-label">Your Email</p>
-                <div class="short-input-container">
-                    <input type="text" placeholder="Type Your Email">
-                </div>
-            </div>
-            <div class="long-form">
-                <p class="form-label">Your Message</p>
-                <div class="long-input-container">
-                    <textarea placeholder="Type Your Message"></textarea>
-                </div>
-            </div> 
-            <div class="btn-container">
-                <button id="sendMsgBtn" class="send-msg-btn">Send the Message</button>
-            </div>
+        <div class="short-form">
+          <p class="form-label">Your Email</p>
+          <div class="short-input-container">
+            <input type="text" placeholder="Type Your Email" />
+          </div>
         </div>
-    <hr class="line"><!---Form👈👈👈-Form-👈👈👈👈👈👈-->
-<!-- -👇👇👇-FOOTER-👇👇👇-START-👇👇👇--->
-<div class="footer">
-    <p class="footer-txt">Find me</p>
-    <div class="footer-icons">
-        <div><a href="https://www.instagram.com/the_cocktail_tree/ "><img src="./icons/instagram-icon-light-mode.svg" alt="Instagram Logo" class="icons" id="instagramLogo"/></a> </DIv>
-        <div><a href="https://www.linkedin.com/company/the-cocktail-tree/?"><img src="./icons/linkedin-icon-light-mode.svg" alt="LinkedIn Logo" class="icons" id="linkedInLogo"/></a></div>
-        <div><a href="https://www.tiktok.com/@the_cocktail_tree?is_from_webapp=1&sender_device=pc"><img src="./icons/tiktok-icon-light-mode.svg" alt="TikTok Logo" class="icons" id="tikTokLogo"/></a></div>
-        <div><a href="https://wa.me/971585155667"><img src="./icons/whatsapp-icon-light-mode.svg" alt="Whatsapp Logo" class="icons" id="whatsappLogo"/></a></div>
-    </div>
-  </div><!---☝☝☝-FOOTER-☝☝☝-END-☝☝☝-- -->
+        <div class="long-form">
+          <p class="form-label">Your Message</p>
+          <div class="long-input-container">
+            <textarea placeholder="Type Your Message"></textarea>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button id="sendMsgBtn" class="send-msg-btn">Send the Message</button>
+        </div>
+      </div>
+      <hr class="line" />
+      <!---Form👈👈👈-Form-👈👈👈👈👈👈-->
+      <!-- -👇👇👇-FOOTER-👇👇👇-START-👇👇👇--->
+      <div class="footer">
+        <p class="footer-txt">Find me</p>
+        <div class="footer-icons">
+          <div>
+            <a href="https://www.instagram.com/the_cocktail_tree/ "
+              ><img
+                src="./icons/instagram-icon-light-mode.svg"
+                alt="Instagram Logo"
+                class="icons"
+                id="instagramLogo"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/company/the-cocktail-tree/?"
+              ><img
+                src="./icons/linkedin-icon-light-mode.svg"
+                alt="LinkedIn Logo"
+                class="icons"
+                id="linkedInLogo"
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://www.tiktok.com/@the_cocktail_tree?is_from_webapp=1&sender_device=pc"
+              ><img
+                src="./icons/tiktok-icon-light-mode.svg"
+                alt="TikTok Logo"
+                class="icons"
+                id="tikTokLogo"
+            /></a>
+          </div>
+          <div>
+            <a href="https://wa.me/971585155667"
+              ><img
+                src="./icons/whatsapp-icon-light-mode.svg"
+                alt="Whatsapp Logo"
+                class="icons"
+                id="whatsappLogo"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!---☝☝☝-FOOTER-☝☝☝-END-☝☝☝-- -->
     </section>
-    <script src="./contacts.js"></script>
-</body>
+    <script type="module" src="./contacts.js"></script>
+  </body>
 </html>
