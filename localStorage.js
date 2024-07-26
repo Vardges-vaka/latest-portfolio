@@ -6,6 +6,8 @@ import {
   setDarkModeAboutPage,
   setLightModeAboutPage,
 } from "./modeFunctions.js";
+
+//______________________________________________👇👇👇_Seving the local Storages For Pages_👇
 export function setThemeFromStorage() {
   const storedTheme = localStorage.getItem("theme");
   if (storedTheme) {
@@ -13,8 +15,21 @@ export function setThemeFromStorage() {
     storedTheme === "dark" ? setDarkMode() : setLightMode();
   }
 }
-
-//👇👇👇_Mode Switch Functions For Pages_👇_Start.
+export function setThemeFromStorageHome() {
+  const storedTheme = localStorage.getItem("theme");
+  if (storedTheme) {
+    document.body.dataset.mode = storedTheme;
+    storedTheme === "dark" ? setDarkModeHomePage() : setLightModeHomePage();
+  }
+}
+export function setThemeFromStorageAbout() {
+  const storedTheme = localStorage.getItem("theme");
+  if (storedTheme) {
+    document.body.dataset.mode = storedTheme;
+    storedTheme === "dark" ? setDarkModeAboutPage() : setLightModeAboutPage();
+  }
+}
+//______________________________________________👇👇👇_Mode Switch Functions For Pages_👇_Start.
 
 export function modeSwitchHome() {
   const body = document.body;
@@ -70,4 +85,4 @@ export function modeSwitchPortfolio() {
     localStorage.setItem("theme", "light");
   }
 }
-//☝☝☝_Mode Switch Functions For Pages_☝_End.
+//______________________________________________☝☝☝_Mode Switch Functions For Pages_☝_End.
