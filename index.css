@@ -7,28 +7,7 @@
   src: url(/Fonts/Poppins-Regular.ttf);
 }
 :root {
-  /* -👇👇👇_LIGHT_MODE_👇👇👇_Color_Scheme_👇👇👇- */
-  --bodyColor-light: #f0f0f0;
-  --titleColor-light: #1f1f1f;
-  --subtitleColor-light: #4b4b4b;
-  --textColor-light: #1f1f1f;
-  --lineColor-light: #007bff;
-  --borderColor-light: #007bff;
-  --buttonBackgroundColor-light: #007bff;
-  --buttonBackgroundHover-light: #f0f0f0;
-  --buttonTextColor-light: #f0f0f0;
-  --buttonTextHover-light: #1f1f1f;
-  --footerIconsBackgroundHoverCover-light: #007bff;
-  --footerIconsBorderColor-light: #1f1f1f;
-  --footerTextbackgroundHoverColor-light: #007bff;
-  --footerTextBorderHovercolor-light: #1f1f1f;
-  --footertitleColor-light: #1f1f1f;
-  --footertitleHoverColor-light: #fffcfc;
-  --headerNavLinkACTIVEBorderColor-light: #007bff;
-  --headerNavLinkACTIVEColor-light: #1f1f1f;
-  --headerNavLinkNONACTIVEColor-light: #1f1f1f;
-  --textModeColor-light: #1f1f1f;
-  /* -👇👇👇_DEFAULT_MODE_👇👇👇_Color_Scheme_👇👇👇- */
+  /* -👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇_DEFAULT_MODE_👇👇_Color_Scheme_👇👇- */
   --bodyColor: var(--bodyColor-light);
   --titleColor: var(--titleColor-light);
   --subtitleColor: var(--subtitleColor-light);
@@ -51,55 +30,104 @@
   --headerNavLinkACTIVEColor: var(--headerNavLinkACTIVEColor-light);
   --headerNavLinkNONACTIVEColor: var(--headerNavLinkNONACTIVEColor-light);
   --textModeColor: var(--textModeColor-light);
+  --dataTogleModeBgImage: var(--dataTogleModeBgImage-light);
+  --navActiceTabBackground: var(--navActiceTabBackground-light);
+  --bodyBackgroundImage: var(--bodyBackgroundImage-light);
+  --headerModeFlexDIrection: var(--headerModeFlexDIrection-light);
+  --contentBackgroundImage: var(--contentBackgroundImage-light);
+  --contentBorder: var(--contentBorder-light);
+  /* -☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝☝-_DEFAULT_MODE_-☝☝_Color_Scheme_☝☝__- */
+  --dataTogleModeBgImage-light: url("./icons/light-mode-icon");
+  --dataTogleModeBgImage-dark: url("./icons/cool-mode-icon.gif");
 
-  /* -👇👇👇_COOL_MODE_👇👇👇_Background_Color_Scheme_👇👇👇- */
+  --bodyColor-light: #f0f0f0;
   --bodyColor-dark: #360130;
+
+  --titleColor-light: #1f1f1f;
   --titleColor-dark: #ffaa00;
+
+  --subtitleColor-light: #4b4b4b;
   --subtitleColor-dark: #0c71b4;
+
+  --textColor-light: #1f1f1f;
   --textColor-dark: #f0f0f0;
+
+  --lineColor-light: #007bff;
   --lineColor-dark: #a800a8;
+
+  --borderColor-light: #007bff;
   --borderColor-dark: #ff00ff;
+
+  --buttonBackgroundColor-light: #007bff;
   --buttonBackgroundColor-dark: #132531;
+
+  --buttonBackgroundHover-light: #f0f0f0;
   --buttonBackgroundHover-dark: #7a297a;
+
+  --buttonTextColor-light: #f0f0f0;
   --buttonTextColor-dark: #f0f0f0;
+
+  --buttonTextHover-light: #1f1f1f;
   --buttonTextHover-dark: #1f1f1f;
+
+  --footerIconsBackgroundHoverCover-light: #007bff;
   --footerIconsBackgroundHoverCover-dark: none;
+
+  --footerIconsBorderColor-light: #1f1f1f;
   --footerIconsBorderColor-dark: none;
+
+  --footerTextbackgroundHoverColor-light: #007bff;
   --footerTextbackgroundHoverColor-dark: #ffd500;
+
+  --footerTextBorderHovercolor-light: #1f1f1f;
   --footerTextBorderHovercolor-dark: #007bff;
+
+  --footertitleColor-light: #1f1f1f;
   --footertitleColor-dark: #fffcfc;
+
+  --footertitleHoverColor-light: #fffcfc;
   --footertitleHoverColor-dark: #1f1f1f;
+
+  --headerNavLinkACTIVEBorderColor-light: #007bff;
   --headerNavLinkACTIVEBorderColor-dark: #007bff;
+
+  --headerNavLinkACTIVEColor-light: #1f1f1f;
   --headerNavLinkACTIVEColor-dark: #ff9500;
+
+  --headerNavLinkNONACTIVEColor-light: #1f1f1f;
   --headerNavLinkNONACTIVEColor-dark: #f0f0f0;
+
+  --textModeColor-light: #1f1f1f;
   --textModeColor-dark: #ffd500;
 
   --bodyBackgroundImage-light: none;
-  --bodyBackgroundImage: var(--bodyBackgroundImage-light);
   --bodyBackgroundImage-dark: url("./images/Backgrounds/body-5.gif");
 
-  --font-family-title: "Rubik-Dirt", sans-serif;
-  --font-family-body: "Poppins", sans-serif;
-
-  --navActiceTabBackground: var(--navActiceTabBackground-light);
   --navActiceTabBackground-light: none;
   --navActiceTabBackground-dark: url("./icons/active-nav-bg-cool-mode.gif");
 
-  --headerModeFlexDIrection: var(--headerModeFlexDIrection-light);
   --headerModeFlexDIrection-light: flex;
   --headerModeFlexDIrection-dark: row-reverse;
 
   --contentBackgroundImage-light: none;
-  --contentBackgroundImage: var(--contentBackgroundImage-light);
   --contentBackgroundImage-dark: url("./images/Backgrounds/body-22.gif");
 
   --contentBorder-light: none;
-  --contentBorder: var(--contentBorder-light);
   --contentBorder-dark: 2px dashed #fd6f03;
+
+  --font-family-title: "Rubik-Dirt", sans-serif;
+  --font-family-body: "Poppins", sans-serif;
+
+  /* --mainPageImage: var(--mainPageImage-light); 
+ --mainPageImage-light: url("./images/cartoonize-avatar-light-mode.png");
+  --mainPageImage-dark: url("./images/cartoonize-avatar-cool-mode.png"); FIXME:*/
+}
+
+.me {
+  margin-bottom: -5px;
 }
 body {
   background-image: var(--bodyBackgroundImage);
-
   background-color: var(--bodyColor);
   margin: 0;
 }
@@ -126,9 +154,7 @@ body {
   justify-content: space-between;
   align-items: center;
   align-self: center;
-  border: 1px solid var(--border-color);
   border-radius: 50px;
-  background-color: var(--btn-background-light);
   gap: 5px;
   padding-right: 10px;
   padding-left: 3px;
@@ -149,19 +175,7 @@ body {
   display: none;
 }
 .mode label {
-  /**
-   * Sets the background image of the mode toggle element to the "cool mode" icon.
-   * This is a temporary fix for the icon, as indicated by the "FIXME:" comment.
-   */
-  /**
-   * Sets the background image of the mode toggle element to the "cool mode" icon.
-   * This is a temporary fix for the icon, as indicated by the "FIXME:" comment.
-   */
-  /**
-   * Sets the background image of the mode toggle element to the "cool mode" icon.
-   * This is a temporary fix for the icon, as indicated by the "FIXME:" comment.
-   */
-  background-image: url("./icons/cool-mode-icon.gif");/* FIXME: */
+  background-image: var(--dataTogleModeBgImage);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -173,16 +187,14 @@ body {
 }
 
 .mode input[type="checkbox"]:checked + label {
-  /* background-color: var();-----------------☝☝☝-Mode-👇👇👇--- */
   position: absolute;
   bottom: 0px;
   left: 5px;
   right: 0px;
   top: 2.5px;
-  background-image: url("./icons/light-mode-icon"); /* FIXME: */
+  background-image: var(--dataTogleModeBgImage); /* FIXME: */
 }
-/* -☝☝☝-Mode-☝☝☝-end-☝☝☝- */
-/* ---👇👇👇-header-👇👇👇-Start-👇👇👇--- */
+/* -☝☝-Mode-☝☝-end-☝__👇-header-👇👇-Start-👇👇--- */
 header {
   display: flex;
   flex-direction: row;
@@ -213,7 +225,8 @@ header ul {
 .non-active {
   color: var(--headerNavLinkNONACTIVEColor);
   text-decoration-line: none;
-} /* -☝☝☝-Header-☝☝☝-end-☝☝☝- */
+}
+/* -☝☝☝-Header-☝☝☝-end-☝☝☝- */
 .main-content {
   display: flex;
   justify-content: center;
@@ -221,7 +234,6 @@ header ul {
   align-content: stretch;
   margin-top: 64px;
   padding: 50px;
-  /* background-color: blue; */
 }
 .content {
   display: flex;
@@ -245,7 +257,6 @@ header ul {
   align-items: stretch;
   width: 450px;
   margin-top: 0px;
-  /* margin: 10px 20px; */
 }
 .hero-title {
   font-size: 64px;
@@ -272,9 +283,7 @@ header ul {
   width: fit-content;
   padding: 2.5px;
 }
-.me {
-  margin-bottom: -5px;
-}
+
 /* -👇👇👇-Footer-👇👇👇-Start-👇👇👇- */
 .icons {
   width: 35px;
@@ -392,6 +401,7 @@ header ul {
   transition-timing-function: ease-in-out;
 }
 /* -☝☝☝-Button-☝☝☝-end-☝☝☝- */
+
 /* @media only screen and (max-width: 600px) {
     .content {
       flex-direction: column;
