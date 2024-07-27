@@ -1,11 +1,16 @@
-let modeLabel = document.getElementById("modeTitle");
-let avatar = document.getElementById("crtAvatar");
-let logoIcon = document.getElementById("logoIcon");
-let avatarHomePage = document.getElementById("avatarHomePage");
+let modeLabel = null;
+let avatar = null;
+let logoIcon = null;
+let avatarHomePage = null;
 
-//FIXME:_TODO:_FIXME:_TODO:_FIXME:_TODO:_FIXME:_👇👇👇_Header Mode Switch Functions_👇_Start.
+function gettingTheElements() {
+  modeLabel = document.getElementById("modeTitle");
+  avatar = document.getElementById("crtAvatar");
+  logoIcon = document.getElementById("logoIcon");
+  avatarHomePage = document.getElementById("avatarHomePage");
+}
 
-//______________________________________________👇👇👇_Footer Mode Switch Functions_👇_Start.
+//______________________________________________👇👇👇_FOOTER Mode Switch Functions_👇
 function updateFooterIcons(mode) {
   const instIcon = document.getElementById("instagramLogo");
   const linkedInIcon = document.getElementById("linkedInLogo");
@@ -96,9 +101,10 @@ function setLightModeFooter() {
   // whatsappIcon.src = "./icons/whatsapp-icon-light-mode.svg";
 }
 
-//______________________________________________👇👇👇_Mode Switch Functions For Pages_👇_Start.
+//______________________________________________👇👇👇_MAIN Mode Switch Functions_👇
 
 export function setDarkMode() {
+  gettingTheElements();
   const rootStyles = getComputedStyle(document.documentElement);
   document.documentElement.style.setProperty(
     "--dataTogleModeBgImage",
@@ -187,6 +193,7 @@ export function setDarkMode() {
 }
 
 export function setLightMode() {
+  gettingTheElements();
   const rootStyles = getComputedStyle(document.documentElement);
   document.documentElement.style.setProperty(
     "--dataTogleModeBgImage",
@@ -275,8 +282,9 @@ export function setLightMode() {
   updateFooterIcons("light");
 }
 
-//______________________________________________👇👇👇_Mode Switch Functions For Pages_👇_Start.
+//______________________________________________👇👇👇_MODE Switch Functions For Pages_👇
 export function setDarkModeHomePage() {
+  initializeElements();
   const rootStyles = getComputedStyle(document.documentElement);
 
   document.documentElement.style.setProperty(
@@ -291,6 +299,7 @@ export function setDarkModeHomePage() {
   avatar.src = "./images/cartoonize-avatar-cool-mode.png";
 }
 export function setLightModeHomePage() {
+  initializeElements();
   const rootStyles = getComputedStyle(document.documentElement);
 
   document.documentElement.style.setProperty(
@@ -305,10 +314,14 @@ export function setLightModeHomePage() {
   avatar.src = "./images/cartoonize-avatar-light-mode.png";
 }
 export function setDarkModeAboutPage() {
+  gettingTheElements();
+
   const rootStyles = getComputedStyle(document.documentElement);
   avatarHomePage.src = "./images/my-real-face-cool-mode.gif";
 }
 export function setLightModeAboutPage() {
+  gettingTheElements();
+
   const rootStyles = getComputedStyle(document.documentElement);
   avatarHomePage.src = "./images/my-Face-light-mode.png";
 }

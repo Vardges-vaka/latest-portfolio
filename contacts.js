@@ -1,5 +1,5 @@
-import { setThemeFromStorage, modeSwitchContacts } from "./localStorage.js";
-import { createFooter } from "./footer.js";
+import { setThemeFromStorage, modeSwitchGeneric } from "./localStorage.js";
+import { createFooter, createHeader } from "./mainLayout.js";
 
 let messageBtn = document.getElementById("sendMsgBtn");
 messageBtn.addEventListener("click", function () {
@@ -7,9 +7,13 @@ messageBtn.addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const footerContainer = document.getElementById("footer-container");
+  let headerContainer = document.getElementById("header-container");
+  headerContainer.appendChild(createHeader("contact"));
+  let footerContainer = document.getElementById("footer-container");
   footerContainer.appendChild(createFooter());
   setThemeFromStorage();
+  let modea = document.getElementById("lightMode");
+  if (modea) {
+    modea.addEventListener("click", modeSwitchGeneric);
+  }
 });
-let modea = document.getElementById("lightMode");
-modea.addEventListener("click", modeSwitchContacts);

@@ -4,14 +4,17 @@ import {
   modeSwitchHome,
 } from "./localStorage.js";
 
-import { createFooter } from "./footer.js";
+import { createFooter, createHeader } from "./mainLayout.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const footerContainer = document.getElementById("footer-container");
+  let headerContainer = document.getElementById("header-container");
+  headerContainer.appendChild(createHeader("home"));
+  let footerContainer = document.getElementById("footer-container");
   footerContainer.appendChild(createFooter());
-
   setThemeFromStorage();
   setThemeFromStorageHome();
+  let mode = document.getElementById("lightMode");
+  if (mode) {
+    mode.addEventListener("click", modeSwitchHome);
+  }
 });
-let mode = document.getElementById("lightMode");
-mode.addEventListener("click", modeSwitchHome);
