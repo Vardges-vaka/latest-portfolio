@@ -9,14 +9,13 @@ function gettingTheElements() {
   logoIcon = document.getElementById("logoIcon");
   avatarHomePage = document.getElementById("avatarHomePage");
 }
-
 //______________________________________________👇👇👇_FOOTER Mode Switch Functions_👇
 function updateFooterIcons(mode) {
-  const instIcon = document.getElementById("instagramLogo");
-  const linkedInIcon = document.getElementById("linkedInLogo");
-  const tikTokIcon = document.getElementById("tikTokLogo");
-  const whatsappIcon = document.getElementById("whatsappLogo");
-  const logoIcon = document.getElementById("logoIcon");
+  let instIcon = document.getElementById("instagramLogo");
+  let linkedInIcon = document.getElementById("linkedInLogo");
+  let tikTokIcon = document.getElementById("tikTokLogo");
+  let whatsappIcon = document.getElementById("whatsappLogo");
+  let logoIcon = document.getElementById("logoIcon");
 
   if (mode === "dark") {
     instIcon.src = "./icons/instagram-icon-cool-mode.svg";
@@ -32,7 +31,7 @@ function updateFooterIcons(mode) {
 }
 
 function setDarkModeFooter() {
-  const rootStyles = getComputedStyle(document.documentElement);
+  let rootStyles = getComputedStyle(document.documentElement);
   document.documentElement.style.setProperty(
     "--footerIconsBackgroundHoverCover",
     rootStyles.getPropertyValue("--footerIconsBackgroundHoverCover-dark").trim()
@@ -58,15 +57,10 @@ function setDarkModeFooter() {
     rootStyles.getPropertyValue("--footertitleHoverColor-dark").trim()
   );
   modeLabel.textContent = "Light Mode";
-
-  // instIcon.src = "./icons/instagram-icon-cool-mode.svg";
-  // linkedInIcon.src = "./icons/linkedin-icon-cool-mode.svg";
-  // tikTokIcon.src = "./icons/tiktok-icon-cool-mode.svg";
-  // whatsappIcon.src = "./icons/whatsapp-icon-cool-mode.svg";
 }
 
 function setLightModeFooter() {
-  const rootStyles = getComputedStyle(document.documentElement);
+  let rootStyles = getComputedStyle(document.documentElement);
   document.documentElement.style.setProperty(
     "--footerIconsBackgroundHoverCover",
     rootStyles
@@ -94,18 +88,11 @@ function setLightModeFooter() {
     rootStyles.getPropertyValue("--footertitleHoverColor-light").trim()
   );
   modeLabel.textContent = "Cool Mode";
-
-  // instIcon.src = "./icons/instagram-icon-light-mode.svg";
-  // linkedInIcon.src = "./icons/linkedin-icon-light-mode.svg";
-  // tikTokIcon.src = "./icons/tiktok-icon-light-mode.svg";
-  // whatsappIcon.src = "./icons/whatsapp-icon-light-mode.svg";
 }
-
 //______________________________________________👇👇👇_MAIN Mode Switch Functions_👇
-
 export function setDarkMode() {
   gettingTheElements();
-  const rootStyles = getComputedStyle(document.documentElement);
+  let rootStyles = getComputedStyle(document.documentElement);
   document.documentElement.style.setProperty(
     "--dataTogleModeBgImage",
     rootStyles.getPropertyValue("--dataTogleModeBgImage-light").trim()
@@ -178,23 +165,17 @@ export function setDarkMode() {
     "--contentBorder",
     rootStyles.getPropertyValue("--contentBorder-dark").trim()
   );
-
-  // FIXME:
   document.documentElement.style.setProperty(
     "--navActiceTabBackground",
     rootStyles.getPropertyValue("--navActiceTabBackground-dark").trim()
   );
-  // FIXME:
-
   logoIcon.src = "./icons/the-logo-cool-mode.svg";
-
   setDarkModeFooter();
   updateFooterIcons("dark");
 }
-
 export function setLightMode() {
   gettingTheElements();
-  const rootStyles = getComputedStyle(document.documentElement);
+  let rootStyles = getComputedStyle(document.documentElement);
   document.documentElement.style.setProperty(
     "--dataTogleModeBgImage",
     rootStyles.getPropertyValue("--dataTogleModeBgImage-dark").trim()
@@ -251,7 +232,6 @@ export function setLightMode() {
     "--headerNavLinkNONACTIVEColor",
     rootStyles.getPropertyValue("--headerNavLinkNONACTIVEColor-light").trim()
   );
-
   document.documentElement.style.setProperty(
     "--headerModeFlexDIrection",
     rootStyles.getPropertyValue("--headerModeFlexDIrection-light").trim()
@@ -268,60 +248,40 @@ export function setLightMode() {
     "--contentBorder",
     rootStyles.getPropertyValue("--contentBorder-light").trim()
   );
-
-  // FIXME:
   document.documentElement.style.setProperty(
     "--navActiceTabBackground",
     rootStyles.getPropertyValue("--navActiceTabBackground-light").trim()
   );
-  // FIXME:
-
   logoIcon.src = "./icons/the-logo-light-mode.svg";
-
   setLightModeFooter();
   updateFooterIcons("light");
 }
-
 //______________________________________________👇👇👇_MODE Switch Functions For Pages_👇
 export function setDarkModeHomePage() {
-  initializeElements();
-  const rootStyles = getComputedStyle(document.documentElement);
-
+  gettingTheElements();
+  let rootStyles = getComputedStyle(document.documentElement);
   document.documentElement.style.setProperty(
     "--contentBackgroundImage",
     rootStyles.getPropertyValue("--contentBackgroundImage-dark").trim()
   );
-  // FIXME:
-  // document.documentElement.style.setProperty(
-  //   "--mainPageImage",
-  //   rootStyles.getPropertyValue("--mainPageImage-dark").trim()
-  // );
   avatar.src = "./images/cartoonize-avatar-cool-mode.png";
 }
 export function setLightModeHomePage() {
-  initializeElements();
-  const rootStyles = getComputedStyle(document.documentElement);
-
+  gettingTheElements();
+  let rootStyles = getComputedStyle(document.documentElement);
   document.documentElement.style.setProperty(
     "--contentBackgroundImage",
     rootStyles.getPropertyValue("--contentBackgroundImage-light").trim()
   );
-  // FIXME:
-  // document.documentElement.style.setProperty(
-  //   "--mainPageImage",
-  //   rootStyles.getPropertyValue("--mainPageImage-light").trim()
-  // );
   avatar.src = "./images/cartoonize-avatar-light-mode.png";
 }
 export function setDarkModeAboutPage() {
   gettingTheElements();
-
-  const rootStyles = getComputedStyle(document.documentElement);
+  let rootStyles = getComputedStyle(document.documentElement);
   avatarHomePage.src = "./images/my-real-face-cool-mode.gif";
 }
 export function setLightModeAboutPage() {
   gettingTheElements();
-
-  const rootStyles = getComputedStyle(document.documentElement);
+  let rootStyles = getComputedStyle(document.documentElement);
   avatarHomePage.src = "./images/my-Face-light-mode.png";
 }
